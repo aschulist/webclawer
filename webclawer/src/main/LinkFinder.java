@@ -19,19 +19,19 @@ public class LinkFinder {
 	Iterator<String> results;
 	ArrayList<String> al;
 	
-	public static void main(String[] args) {
-		LinkFinder lF = new LinkFinder();
-		InputStream in = null;
-		try {
-			in = new FileInputStream(new File("C:/Users/Anthony Schulist/openSource/simple link finder/src/files/neumont.edu"));
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		lF.processPage(in);
-		lF.results = lF.getLinks();
-	}
+//	public static void main(String[] args) {
+//		LinkFinder lF = new LinkFinder();
+//		InputStream in = null;
+//		try {
+//			in = new FileInputStream(new File("C:/Users/Anthony Schulist/openSource/simple link finder/src/files/neumont.edu"));
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//		lF.processPage(in);
+//		lF.results = lF.getLinks();
+//	}
 	
 	public void processPage(InputStream in) {
 		BufferedReader br = null;
